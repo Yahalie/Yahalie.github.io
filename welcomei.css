@@ -22,27 +22,17 @@ p {
 	color: #ffffff;
 	font-size: 2rem;
 }
-
 .btn.btn-primary {
-font-family: Otama.ep, serif;
-text-align: center;
   border-radius: 0px;
-  border: 1000px;
-border-color: #fff;
-  color: #000;
+  border: 0px;
+  color: #ffffff;
   text-shadow: none;
-  background-color: DimGrey;
+  background-color: #555;
 }
 
 .btn.btn-primary:hover {
-  color: #ffffff;
-  background-color: #000;
-}
-
-.btn-secondary {
-  background-color: #000;
-  color: #ffffff;
-  margin: 30 30 30px;
+  color: #000000;
+  background-color: #000000;
 }
 #footer {
 	color: #FFF;
