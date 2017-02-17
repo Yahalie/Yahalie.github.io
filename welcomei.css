@@ -6,13 +6,10 @@ font-family: Otama.ep, serif;
 	text-align: center;
 	width: 100%;
 }
-
 h2 {
 	color: #ffffff;
 	font-size: 70px; 
 }
-
-
 .hero {
 	background-image: url('236.gif');
 	background-position: center top;
@@ -21,43 +18,30 @@ h2 {
 	margin: 30px;
 	text-shadow: 0 5px #000;
 }
-
-
 p {
 	color: #ffffff;
 	font-size: 2rem;
 }
-
 .hero a {
 	color: #FFF;
 	font-size: 24px;
 	text-decoration: none;
 }
+header {
+  padding: 20px 0;
+}
+
+header .row,
+footer .row {
+  display: flex;
+  align-items: center;
+}
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/jumbotron.jpg');
-  background-size: cover;
   color: #ffffff;
   height: 500px;
   text-shadow: 0.25px 0.25px 0.25px #000000;
-}
-
-.jumbotron h2 {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 0;
-  color: #fff;
-}
-
-.jumbotron h3 {
-  margin: 0 0 20px;
-  color: #fff;
-}
-
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
 }
 .btn.btn-primary {
   border-radius: 2px;
