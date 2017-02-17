@@ -24,7 +24,8 @@ p {
 }
 .btn.btn-primary {
 font-family: 'Otama.ep', sans-serif;
-padding: 0 60px;
+padding: 0 50px;
+	border-radius: 5px;
 text-decoration:none;
 color: #ffffff;
 background-color: #555;
