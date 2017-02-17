@@ -27,18 +27,18 @@ p {
 text-align: center;
   border-radius: 50px;
   border: 20px;
-  color: Brown;
+  color: #000;
   text-shadow: none;
   background-color: #ffffff;
 }
 
 .btn.btn-primary:hover {
   color: #ffffff;
-  background-color: Brown;
+  background-color: #000;
 }
 
 .btn-secondary {
-  background-color: Brown;
+  background-color: #000;
   color: #ffffff;
   margin: 0 0 30px;
 }
