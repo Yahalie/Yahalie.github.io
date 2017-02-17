@@ -24,9 +24,10 @@ p {
 }
 
 .btn.btn-primary {
+font-family: Otama.ep, serif;
 text-align: center;
-  border-radius: 50px;
-  border: 20px;
+  border-radius: 200px;
+  border: 100px;
   color: #000;
   text-shadow: none;
   background-color: #ffffff;
