@@ -28,6 +28,7 @@ p {
   color: #ffffff;
   text-shadow: none;
   background-color: #555;
+	font-size: 30px;
 }
 
 .btn.btn-primary:hover {
