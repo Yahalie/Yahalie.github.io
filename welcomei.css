@@ -28,7 +28,8 @@ font-family: Otama.ep, serif;
 text-align: center;
   border-radius: 200px;
   border: 100px;
-  color: #fff;
+border-color: #fff;
+  color: #000;
   text-shadow: none;
   background-color: #ffffff;
 }
