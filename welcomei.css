@@ -24,15 +24,12 @@ p {
 }
 .btn.btn-primary {
 font-family: 'Otama.ep', sans-serif;
-font-weight: 300;
-padding: 0 209px;
+padding: 0 60px;
 text-decoration:none;
 border-radius: 5px;
-border: 0px;
 color: #ffffff;
-text-shadow: none;
 background-color: #555;
-	font-size: 30px;
+font-size: 30px;
 }
 
 .btn.btn-primary:hover {
