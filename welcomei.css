@@ -46,27 +46,22 @@ p {
   margin: 0 0 20px;
   color: #fff;
 }
-
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
-}
 .btn.btn-primary {
 text-align: center;
-  border-radius: 2px;
+  border-radius: 10px;
   border: 0px;
-  color: #fbd1d5;
+  color: Gray;
   text-shadow: none;
   background-color: #ffffff;
 }
 
 .btn.btn-primary:hover {
   color: #ffffff;
-  background-color: #fbd1d5;
+  background-color: Gray;
 }
 
 .btn-secondary {
-  background-color: #E8DFE0;
+  background-color: Gray;
   color: #ffffff;
   margin: 0 0 30px;
 }
