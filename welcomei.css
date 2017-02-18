@@ -22,23 +22,6 @@ p {
   background-repeat: no-repeat;
   background-position: center center;
 }
-
-.banner .slogan {
-  position: bottom;
-  border: 0px solid white;
-  top: 200px;
-  left: 25%;
-  width: 50%;
-  height: 400px;
-  text-align: center;
-}
-
-.banner .slogan span {
-  color: #fff;
-  font-size: 30px;
-  line-height: 200px;
-}
-
 .container {
   text-align: center;
 }
