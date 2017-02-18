@@ -7,6 +7,10 @@ h1 {
   color: #fff;
   text-align: left;
 }
+p {  
+  color: #fff;
+  text-align: center;
+}
 
 .banner {
   background-color: transparent;
