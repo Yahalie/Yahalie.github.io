@@ -2,7 +2,9 @@ body {
   background-color: #000;
   font-family: Otama.ep, serif;
 }
-  
+a{
+color: #fff
+}
 h1 {  
   color: #fff;
   font-size: 60px;
