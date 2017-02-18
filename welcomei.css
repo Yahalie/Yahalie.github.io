@@ -20,7 +20,7 @@ h2 {
 }
 p {
 	color: #ffffff;
-	font-size: 2rem;
+	text-align: left;
 	font-size: 15px;
 }
 .btn.btn-primary {
