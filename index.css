@@ -5,7 +5,7 @@ body {
 	height: 100%;
 	width: 100%;
 	align-items: center;
-  background-image: url("40.jpg"), url("111.png"); 
+  background-image: url("40.jpg"); 
 	display: flex;
 	font-family: 'Raleway', sans-serif;
 	flex-direction: column;
