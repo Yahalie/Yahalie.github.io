@@ -4,50 +4,30 @@
   </head>
 <body>
 
-  <div class="header">
-    <div class="container">
-<ul class= "nav">
-      <ul id="navmenu">
-        <li><a href="">| B x P |</a><span class="darrow"></span>
-<ul class="sub1">
-			<li><a href="">M I S S I O N</a></li>
-			<li><a href="">V I S I O N</a></li>
-			<li><a href="">B A S E</a></li>
-			
-		</ul>
-</li>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
 
-        <li><a href="">| A R A |</a><span class="darrow"></span>
-<ul class="sub1">
-			<li><a href="">A T T A I N M E N T</a></li>
-			<li><a href="">R E T A I N M E N T</a></li>
-			<li><a href="">A P P L I C A T I O N</a></li>
-			<li><a href="">T E R M I N O L O G Y</a></li>
-		</ul>
-</li>
-        <li><a href="">| S H O P |</a><span class="darrow"></span>
-<ul class="sub1">
-			<li><a href="catalog.html">C A T A L O G</a></li>
-			<li><a href="">B I G C A R T E L</a></li>
-		</ul>
-</li>
-        <li><a href="">| E X T. |</a><span class="darrow"></span>
-<ul class="sub1">
-			<li><a href="">Y O U T U B E</a></li>
-			<li><a href="">B I G C A R T E L</a></li>
-		</ul>
-</li>
+    <a href="#">| Us |</a>
+    <a href="#">| A R A |</a>
+    <a href="#">| M E D I A |</a>
+    <a href="#">| M E S S A G E |</a>
+    <a href="#">| B I G C A R T E L |</a>
 
-<li><a href="">| M S G. |</a><span class="darrow"></span>
-<ul class="sub1">
-			<li><a href="">P H O N E</a></li>
-			<li><a href="">E M A I L</a></li>
-			<li><a href="">Q U I C K | M S G </a></li>
-		</ul>
-</li>
-        </ul>
     </div>
-  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
+</script>
 
   <div class="jumbotron">
     <div class="container">  
