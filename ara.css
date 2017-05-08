@@ -1,0 +1,167 @@
+html, body {
+
+  min-height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  font-weight: 300;
+
+  line-height: 1.5;
+
+}
+
+
+
+body {
+
+  font-family: 'Otama.ep', sans-serif;
+
+  background-image: -webkit-linear-gradient(#000, #000);
+
+  background-position: center top;
+
+  background-size: cover;
+
+  margin: 0;
+
+}
+
+
+
+.page-title {
+
+  text-align: center;
+
+  font-weight: 100;
+
+}
+
+
+
+.page-description {
+
+  background-color: #666;
+
+  color: #333;
+
+  padding: 30px;
+
+  border: 1px solid #000;
+
+  text-align: center;
+
+font-size: 18px;
+
+}
+
+
+
+.gallery {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  justify-content: center;
+
+}
+
+
+
+.gallery-item {
+
+ border: 0px solid #FFF;
+
+  margin: 20px;
+
+}
+
+
+
+.gallery-item .thumbnail {
+
+
+
+}
+
+
+
+/* FOOTER NAVIGATION url ('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg'); */
+
+
+
+nav {
+
+  background-color: #000;
+
+}
+
+
+
+nav li {
+
+display: inline;
+
+  margin: 0;
+
+  padding: 0 10px;
+
+}
+
+
+
+nav ul {
+
+  display: inline;
+
+}
+
+
+
+.contact-btn {
+
+  float: right;
+
+}
+
+
+
+.contact-btn a {
+
+position: relative;
+
+  margin-right: 30px;
+
+  padding: 8px 18px;
+
+  border: 1px solid #333;
+
+
+
+}
+
+
+
+.contact-btn a:active {
+
+  position: relative;
+
+  bottom: 2px;
+
+}
+
+
+
+nav a {
+
+  height: 60px;
+
+  line-height: 60px;
+
+  color: #333;
+
+  text-decoration: none;
+
+}
