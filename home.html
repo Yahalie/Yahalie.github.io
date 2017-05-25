@@ -6,17 +6,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-    /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
-#top .main_menu ul.menu li > a {
-font-size: 20px;
-}
-
-#top .sub_menu ul.menu li > a {
-font-size: 1px;
-}
-}
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body, html {
     height: 100%;
     line-height: 1.8;
@@ -333,7 +323,46 @@ D.O.B: The 90's. </p>
   </div>
   <p class="w3-text-dark-grey">ALL RIGHTS RESERVED K N O W L E D G E | J U N K I E S 2 0 1 7</p>
 </footer>
- 
+ #top .main_menu ul.menu li > a {
+font-size: 16px;
+}
+#top .sub_menu ul.menu li > a {
+font-size: 14px;
+}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (max-width: 989px) {
+#top .main_menu ul.menu li > a {
+font-size: 14px;
+}
+
+#top .sub_menu ul.menu li > a {
+font-size: 12px;
+}
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+#top .main_menu ul.menu li > a {
+font-size: 12px;
+}
+
+#top .sub_menu ul.menu li > a {
+font-size: 10px;
+}
+}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {
+#top .main_menu ul.menu li > a {
+font-size: 11px;
+}
+
+#top .sub_menu ul.menu li > a {
+font-size: 9px;
+}
+}
+        
 <!-- Add Google Maps -->
 <script>
 // Modal Image Gallery
