@@ -59,7 +59,45 @@ body, html {
     min-height: 100%;
 color: #eee;
     }
-	
+
+.play {
+    position: relative;
+    width: 50%;
+}
+
+.pic {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.iddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.play:hover .pic {
+  opacity: 0.3;
+}
+
+.play:hover .iddle {
+  opacity: 1;
+}
+
+.words {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}  
 </style>
 </head>
 <body>
@@ -108,14 +146,20 @@ color: #eee;
 
 <article class="article">
 	<!-- Work Section -->
-<div class="w3-container w3-black w3-text-grey" style="padding:128px 16px" id="work">
+<div class="w3-container w3-black w3-text-grey" style="padding:50px 16px" id="work">
   <h3 class="w3-center">A R T I C L E S</h3>
   <p class="w3-center w3-large">The shit the E D U C A T I O N A L | S Y S T E M will never teach.</p>
 
+
+<div class="play">
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6">
-      <a href="blk.html"><img src="z3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" B L K | P R I V I L E G E "></a>
-    </div>
+      <a href="blk.html"><img src="z3.png" class="pic" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" B L K | P R I V I L E G E "></a>
+     <div class="iddle">
+	<div class="words">John Doe</div>
+  </div>
+</div>
+	</div>
     <div class="w3-col l3 m6">
          <a href="blunts.html"><img src="blunts.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" B L U N T S "></a>
     </div>
