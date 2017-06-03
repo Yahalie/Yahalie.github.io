@@ -56,7 +56,22 @@ nav a {
   text-decoration: none;
 }
   
+ .flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 30px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    }
+
+	header {background: linear-gradient( #6600FF, #000); color:#666;}
 </style>
+
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -88,7 +103,11 @@ nav a {
   <a href="home.html#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> E T C.</a>
   <a href="home.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">M S G.</a>
 </nav>
+<div class="flex-container">
+<header>
+	<br><h1 style="font-family:'Playfair Display',serif;text-align:right;font-weight:40px;max-height:4%" ><a href="attainment.html" style="text-decoration:none">A T T A I N M E N T</a></h1></header>
 
+</div>
 <!-- Work Section -->
  <div class="w3-container w3-black w3-text-grey" style="padding:100px 5px" id="work">
     <h3 class="w3-center">V I S I U A L S</h3>
