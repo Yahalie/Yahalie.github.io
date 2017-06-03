@@ -25,15 +25,15 @@ body, html {
 color: #eee;
     }
  /* FOOTER NAVIGATION url ('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg'); */
-navt {
+nav {
   background-color: #000;
 }
-navt li {
+nav li {
 display: inline;
   margin: 0;
   padding: 0 10px;
 }
- navt ul {
+ nav ul {
   display: inline;
 }
 .contact-btn {
@@ -49,7 +49,7 @@ position: relative;
   position: relative;
   bottom: 2px;
 }
-navt a {
+nav a {
   height: 60px;
   line-height: 60px;
   color: #333;
@@ -68,8 +68,42 @@ navt a {
     -webkit-flex: 1 100%;
     flex: 1 100%;
     }
+.navt
+	body, html {
+   font-family: 'Raleway', Times;
+    height: 100%;
+   }
+.w3-bar .w3-button {
+    padding: 16px;
+}
+	
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 30px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    }
 
-	header {background: linear-gradient( #6600FF, #000); color:#666;}
+.navt {background:linear-gradient(#000, #6600FF);width: 0px;}
+.navt ul {
+    list-style-type: none;
+    padding: 0;
+}
+.navt ul a {
+    text-decoration: none;
+    color:#eee;
+}
+
+@media all and (min-width: 768px) {
+    .navt {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+ 
+header {background: linear-gradient( #6600FF, #000); color:#666;}
 </style>
 
 <body>
@@ -106,7 +140,7 @@ navt a {
 <div class="flex-container">
 <header>
 	<br><h1 style="font-family:'Playfair Display',serif;text-align:right;font-weight:40px;max-height:4%" ><a href="retainment.html" style="text-decoration:none">R E T A I N M E N T</a></h1></header>
-	<nav class="nav">
+	<nav class="navt">
 <ul>
   <li><a href="home.html"> B A S E</a></li><br>
   <li><a href="attainment.html">A T T A I N M E N T</a></li><br>
@@ -209,7 +243,7 @@ function w3_close() {
     mySidebar.style.display = "none";
 }
 </script>
-      <navt>
+      <nav>
       <ul>
        <li><a href="#"><b>H O M E</b></a></li>
         <li><a href="#">A. R. A.</a></li>
@@ -217,5 +251,5 @@ function w3_close() {
       </ul>
       <div class="contact-btn"><a>C O N T A C T</a>
       </div>
-    </navt>
+    </nav>
   </body>
