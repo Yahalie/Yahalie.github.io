@@ -2,7 +2,6 @@
 <title>B L K | R E T A I N M E N T</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -69,11 +68,7 @@ nav a {
     -webkit-flex: 1 100%;
     flex: 1 100%;
     } 
-header {background: linear-gradient( #6600FF, #000); color:#666;}
-	.mySlides {display:none}
-	
-.w3-left, .w3-right, .w3-badge {cursor:pointer}
-.w3-badge {height:13px;width:13px;padding:0}
+	header {background: linear-gradient( #6600FF, #000); color:#666;}
 </style>
 
 <body>
@@ -128,8 +123,7 @@ header {background: linear-gradient( #6600FF, #000); color:#666;}
   <p class="w3-center w3-large">"One thing that is impossible, except on an esoteric level, is the ability to U N S E E."</p>
  <div class="w3-row-padding" style="margin-top:64px">
      <div class="w3-col l3 m6">
-      <img src="vision.gif" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt=" ">
-	     <div class="w3-content w3-display-container" style="max-width:800px">
+<div class="w3-content w3-display-container" style="max-width:800px">
   <img class="mySlides" src="backwood (1).png" style="width:100%">
   <img class="mySlides" src="backwood (2).png" style="width:100%">
   <img class="mySlides" src="backwood (3).png" style="width:100%">
@@ -221,30 +215,6 @@ function onClick(element) {
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
-}
-	
-	var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
 }
 	
 // Toggle between showing and hiding the sidebar when clicking the menu icon
