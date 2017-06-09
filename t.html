@@ -7,15 +7,15 @@
 .mySlides {display:none}
   *{
 background-color: #000;
-color:#333
+color:#666
 }
 </style>
 <body>
 
 <div class="w3-container">
-  <h2>Slideshow Indicators</h2>
-  <p>An example of using buttons to indicate how many slides there are in the slideshow, and which slide the user is currently viewing.</p>
-</div>
+  <center><h1>A R T I C L E | B L U N T S</h1>
+  <p>A few of the D A N G E R S that can arise from S M O K I N G | B L U N T S.</p>
+ </center></div>
 
 <div class="w3-content" style="max-width:800px">
   <img class="mySlides" src="backwood (1).png" style="width:100%">
@@ -35,8 +35,8 @@ color:#333
 
 <div class="w3-center">
   <div class="w3-section">
-    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+    <button class="w3-button w3-dark-grey" onclick="plusDivs(-1)">❮ P </button>
+    <button class="w3-button w3-dark-grey" onclick="plusDivs(1)">Next ❯</button>
   </div>
   <button class="w3-button demo" onclick="currentDiv(1)">1</button> 
   <button class="w3-button demo" onclick="currentDiv(2)">2</button> 
@@ -76,10 +76,10 @@ function showDivs(n) {
      x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-red", "");
+     dots[i].className = dots[i].className.replace(" w3-dark-grey", "");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
+  dots[slideIndex-1].className += " w3-dark-grey";
 }
 </script>
 
