@@ -1,0 +1,73 @@
+<head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1"></head>
+<style>
+
+body{
+	margin: 0;
+	padding: 0;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: #333;
+}
+
+h1{
+	position: absolute;
+	z-index: 5;
+	text-align: center;
+	font-size: 60px;
+	text-transform: uppercase;
+	font-family: 'Montserrat', sans-serif;
+	font-size: calc(1vw + 1vh + 2.8vmin);
+	white-space: nowrap;
+	&:after{
+		content: '| P R I V I L E G E';
+		font-size: calc(1vw + 1vh + 2.8vmin);
+		margin-left: 3%;
+		background: #ddd6f3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #666, #000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #666, #000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+		-webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	}
+}
+
+.hoverbox{
+	width: 25%;
+	height: 100vh;
+	position: relative;
+	z-index: 10;
+	.newword(1, '| P R I V I L E G E', #000, #000);
+	.newword(2, '| M A G I C', #EA8DED, #EABCED);
+	.newword(3, '| I S | G O L D',  #EABC04, #EABC52);
+	.newword(4, '| P O W E R', #4D731D, #567353);
+	.newword(5, '| P R I V I L E G E', #000, #000);
+	.newword(6, '| O P I N I O N', #FF0404, #25BB1D);
+	.newword(7, '| L O V E', #FFEA1D, #FF0404);
+	.newword(8, '| F A M I L Y', #7F3114, #E39E80);
+	.newword(9, '| P E O P L E', #6600FF, #B431ED);
+	.newword(10, '| B U S I N E S S', #6600FF, #000);
+	.newword(11, '| P R I V I L E G E', #000, #000);
+}
+
+.newword(@i, @word, @color1, @color2) {
+  &.hover_@{i}:hover{
+		~ h1{
+			&:after{
+				content: @word;
+				background: linear-gradient(to right, @color1, @color2);
+				-webkit-background-clip: text;
+			}
+		}
+	}
+}
+</style>
+<body>
+- (1..16).each do |i|
+  %div{:class => "hover_#{i} hoverbox"}
+%h1 B L K
+</body>
