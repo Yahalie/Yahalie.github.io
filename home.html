@@ -22,101 +22,10 @@ body, html {
     min-height: 100%;
 color: #eee;
     }
- 
- header {
-  margin: 0;
-  padding: 0;
-  border: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  background: #333;
-}
-.bgh {
-  position: absolute;
-  z-index: 5;
-  text-align: center;
-  font-size: 60px;
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
-  white-space: nowrap;
-}
-h1:after {
-  content: '| P R I V I L E G E';
-  font-size: 60px;
-  margin-left: 3%;
-  background: #ddd6f3;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #666, #000);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #666, #000);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.hoverbox {
-  width: 25%;
-  height: 100%;
-  position: relative;
-  z-index: 10;
-}
-.hoverbox.hover_1:hover ~ h1:after {
-  content: '| P R I V I L E G E';
-  background: linear-gradient(to right, #000, #000);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_2:hover ~ h1:after {
-  content: '| M A G I C';
-  background: linear-gradient(to right, #EA8DED, #EABCED);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_3:hover ~ h1:after {
-  content: '| I S | G O L D';
-  background: linear-gradient(to right, #EABC04, #EABC52);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_4:hover ~ h1:after {
-  content: '| P O W E R';
-  background: linear-gradient(to right, #4D731D, #567353);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_5:hover ~ h1:after {
-  content: '| P R I V I L E G E';
-  background: linear-gradient(to right, #000, #000);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_6:hover ~ h1:after {
-  content: '| O P I N I O N';
-  background: linear-gradient(to right, #FF0404, #25BB1D);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_7:hover ~ h1:after {
-  content: '| L O V E';
-  background: linear-gradient(to right, #FFEA1D, #FF0404);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_8:hover ~ h1:after {
-  content: '| F A M I L Y';
-  background: linear-gradient(to right, #7F3114, #E39E80);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_9:hover ~ h1:after {
-  content: '| P E O P L E';
-  background: linear-gradient(to right, #6600FF, #B431ED);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_10:hover ~ h1:after {
-  content: '| B U S I N E S S';
-  background: linear-gradient(to right, #6600FF, #000);
-  -webkit-background-clip: text;
-}
-.hoverbox.hover_11:hover ~ h1:after {
-  content: '| P R I V I L E G E';
-  background: linear-gradient(to right, #000, #000);
-  -webkit-background-clip: text;
-}
+ /* Full height image header */
+.bgimg-1 { background: linear-gradient( to right, #6600FF, #000); color:#666;
+    min-height: 100%;
+ }
 </style>
 <body>
 
@@ -153,19 +62,7 @@ h1:after {
 <!-- Header with full-height image -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-left w3-text-gray" style="padding: 8px 28px">
-   <div class='hover_1 hoverbox'></div>
-<div class='hover_2 hoverbox'></div>
-<div class='hover_3 hoverbox'></div>
-<div class='hover_4 hoverbox'></div>
-<div class='hover_5 hoverbox'></div>
-<div class='hover_6 hoverbox'></div>
-<div class='hover_7 hoverbox'></div>
-<div class='hover_8 hoverbox'></div>
-<div class='hover_9 hoverbox'></div>
-<div class='hover_10 hoverbox'></div>
-<div class='hover_11 hoverbox'></div>
-<h1 class="bgh">B L K</h1>
-      <h1>UPD.: Attainment & Application. </h1>
+       <h1>UPD.: Attainment & Application. </h1>
         <h2>New visiuals and instructions.</h2>
       <p><a href="retainment.html" class="w3-button w3-black"> L E A R N | M O  R E</a></p>
     </div>
