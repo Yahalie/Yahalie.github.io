@@ -1,0 +1,131 @@
+<title>T R A C K L I S T</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css"href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+<link  rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, html {
+   font-family: 'Raleway', Times;
+    height: 100%;
+   }
+.w3-bar .w3-button {
+    padding: 16px;
+}
+	
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.flex-container > * {
+    padding: 30px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    }
+.article {
+    text-align: left;
+    background: #000;
+    color:#FFF;
+    line-height: 200%;
+}
+	header {background: linear-gradient( #6600FF, #000); color:#666;}
+	footer { background-position: center repeat; background-image: url("40.jpg");color: #eee;max-height:1%;}
+.nav {background:linear-gradient(#000, #6600FF);width: 0px;}
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+    color:#eee;
+}
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+	footer {-webkit-order:3;order:3;} }
+	
+     .w3-wide, .w3-bar, .w3-right{
+	    background: #fff;
+    min-height: 80%;
+color: #000;
+    }
+</style>
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card-2" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide w3-xxlarge"><i class="fa fa-music"></i></a>
+<div class="w3-bar-item w3-button"> P L A Y L I S T</div>
+<div class="w3-bar-item w3-button"><audio controls>
+	<source src="Playlist 1 Truth Rap.mp3" type="audio/mpeg"></audio></div>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="home.html#about" class="w3-bar-item w3-button"><i class="fa fa-users"></i> | U s</a>
+      <a href="home.html#team" class="w3-bar-item w3-button"><i class="fa fa-university"></i> | A R A</a>
+      <a href="home.html#work" class="w3-bar-item w3-button"><i class="fa fa-book"></i> | C A T A L O G</a>
+      <a href="home.html#pricing" class="w3-bar-item w3-button"><i class="fa fa-podcast"></i> | E T C.</a>
+      <a href="home.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> | M S G.</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-text-grey w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="home.html#about" onclick="w3_close()" class="w3-bar-item w3-button">U s</a>
+  <a href="home.html#team" onclick="w3_close()" class="w3-bar-item w3-button">A R A</a>
+  <a href="home.html#work" onclick="w3_close()" class="w3-bar-item w3-button">C A T A L O G</a>
+  <a href="home.html#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> E T C.</a>
+  <a href="home.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">M S G.</a>
+</nav>
+
+<div class="flex-container">
+<header>
+	<br><h1 style="font-family:'Playfair Display',serif;text-align:right;font-weight:40px;max-height:4%" ><a href="attainment.html" style="text-decoration:none">M U S I C</a> </h1>	
+ </header>
+
+<nav class="nav">
+<ul>
+  <li><a href="catalog.html">C A T A L O G</a></li><br>
+  <li><a href="http://blkprivilege.bigcartel.com/">S H O P</a></li><br>
+</ul>
+</nav>
+
+<article class="article">
+<img src="blunts.png" style="padding:10px;float:left;width 250px;height:235px;">
+<h1 style="text-align:right;font-size:25px;font-weight:40px;">T R A C K L I S T</h1> 
+    <p style="text-indent: 10px"><b>Kendrick Lamar - DNA</b><br></p>
+     <p style="text-indent: 10px"><b>Jay Z - The Story of O.J.</b><br></p>
+      <p style="text-indent: 10px"><b>Starlito - You Can't Fall Until You Quit</b><br></p>
+       <p style="text-indent: 10px"><b> Jay Z - Moonlight</b><br></p>
+        <p style="text-indent: 10px"><b> Kendrick Lamar - Humble</b><br></p>
+         <p style="text-indent: 10px"><b></b> Jay Z - 4:44 <br></p>
+          <p style="text-indent: 10px"><b>Starlito - You Can't Fall Until You Quit </b><br></p>
+           <p style="text-indent: 10px"><b>Jay Z - The Story of O.J.</b><br></p>
+            <p style="text-indent: 10px"><b>Starlito - You Can't Fall Until You Quit </b><br></p>
+            <p style="text-indent: 10px"><b>Jay Z - The Story of O.J.</b><br></p>
+             <p style="text-indent: 10px"><b>Kendrick Lamar - Yah</b><br></p>
+              <p style="text-indent: 10px"><b>Jay Z - Legacy</b><br></p>
+               <p style="text-indent: 10px"><b>Kendrick Lamar - Yah</b><br></p>
+                <p style="text-indent: 10px"><b>Jay Z - Family Feud</b><br></p>
+                  <p style="text-indent: 10px"><b>Jay Z - Legacy</b><br></p>
+                    <p style="text-indent: 10px"><b> Kendrick Lamar - Yah</b><br></p>
+                      <p style="text-indent: 10px"><b>Jay Z - Legacy</b><br></p>
+                 <p> Peace & Evolve.</p>
+
+</article>
+
+<footer>&copy;  B L K | P R I V I L E G E</footer>
+</div>
+</body>
