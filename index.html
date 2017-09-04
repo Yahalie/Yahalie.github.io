@@ -1,73 +1,123 @@
-<head> 
-<title>L O B B Y</title>
-    <link href='https://fonts.googleapis.com/css?family=Playfair+Display:900|Raleway:300' rel='stylesheet' type='text/css'>
-    <style>
-	    body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
-	align-items: center;
-  background-color: #000; 
-	display: flex;
-	font-family: 'Raleway', sans-serif;
-	flex-direction: column;
-	justify-content: center;
-	overflow: hidden;
+<html>
+<title> L O B B Y </title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+* { color: #666;
+	font-family: "Raleway", sans-serif;
+	box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
 }
-	    
-
-div.container {
-	align-items: center;
-	align-self: center;
-	background: url('40.jpg') center center;
-	border-radius: 100%;
-	display: flex;
-	flex-direction: column;
-	min-height: 800px;
-	justify-content: center;
-	width: 800px;
-}
-
-h1 {
-  color: #fff;
-  font-family: 'Playfair Display', serif;
-  font-size: 100px;
-  font-weight: 900;
-  line-height: 70px;
-  margin: 0 0 90px 0;
-  text-align: center;
-  text-shadow: 0px 2px 4px rgba(34,62,66,.75);
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  pointer-events: none;
 }
-
-
-a.btn {
-  background: linear-gradient(45deg, rgba(232, 224, 224, 0.65) 0%,rgb(29, 28, 28) 50%,rgba(0, 0, 0, 0.65) 100%);
-  border-radius: 2px;
-  box-shadow: 0px 30px 20px rgba(10, 10, 10, 0.25);
-  color: #fff;
-  font-size: 18px;
-  letter-spacing: 1px;
-  padding: 16px 32px;
+#vidtop-content {
+	top: 10;
+	color: #666;
+}
+.vid-info { position: absolute; bottom: 0; right: 0; width: 100%; background:  rgba(0,0,0,0.2); color: #666; padding: 1rem; font-family: "Raleway", sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #6600ff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
+nav {
+  background-color: transparent;
+}
+nav li {
+float: right;
+display: inline;
+  margin: 0;
+  padding: 0 10px;
+}
+ nav ul {
+  display: inline;
+}
+.contact-btn {
+  float: left;	
+ }
+.contact-btn a {
+color: #6600ff;
+position: relative;
+  margin-left: 30px;
+  padding: 8px 18px;
+  border: 3px solid #6600ff;
+}
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+nav a {
+  height: 60px;
+  line-height: 60px;
+  color: #6600ff;
   text-decoration: none;
-  text-transform: uppercase;
-  -webkit-transition: box-shadow 1s ease;
-	transition: box-shadow 1s ease;
 }
+</style>
+<body>
+	
+	  <nav>
+		   <b><div class="contact-btn"><a href="home.html">H O M E</a></div></b>
+		     <ul>
+      <li><a href="home.html#team">E X P L O R E </a></li>
+	<li><a href="araexplained.html"><b>L E A R N </b></a></li>
+	<li><a href="http://blkprivilege.bigcartel.com">S H O P </a></li>
+	</ul>
+ </nav>
+	
+<div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/OGoLd1LvW2A?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=OGoLd1LvW2A" allowfullscreen></iframe>
+    </div>
+  </div>
 
-a.btn:hover {
-	box-shadow: 10px 20px 30px rgba(81, 13, 241, 0.25);
-	-webkit-transition: box-shadow 1s ease;
-	transition: box-shadow 1s ease;
-}
-	</style>
-  </head>
-  <body>
-  	<div class="container">
-  		<h1>B | L | K <br> <br> P R I V I L E G E</h1>
-  	  <a class="btn" href="home.html"> E N T E R | H E R E </a>
-	  </div>
+<div id="vidtop-content">
+<div class="vid-info">
+	<h1>T H A N K S FOR THE S U P P O R T . . .</h1>
+	<p>TORONTO, ONTARIO, CANADA
+ERDING, BAYEM, GERMANY
+PORTOGRUARO, VENETO, ITALY
+TOTTENHAM, ENGLAND, UNITED KINGDOM
+MOUNTAIN VIEW, CALIFORNIA, UNITED STATES
+ORLANDO, FLORIDA, UNITED STATES
+MIAMI, FLORIDA, UNITED STATES
+LITHONIA, GEORGIA, UNITED STATES
+WADLEY, GEORGIA, UNITED STATES
+HYATTSVILLE, MARYLAND, UNITED STATES
+WARREN, MICHIGAN, UNITED STATES
+TROY, MISSOURI, UNITED STATES
+ST. LOUIS, MISSOURI, UNITED STATES
+OMAHA, NEBRASKA, UNITED STATES
+NORTH LAS VEGAS, NEVADA, UNITED STATES
+PLEASANTVILLE, NEW JERSEY, UNITED STATES
+JAMAICA, NEW YORK, UNITED STATES
+HARRISBURG, NORTH CAROLINA, UNITED STATES
+OKLAHOMA CITY, OKLAHOMA, UNITED STATES
+COLUMBIA, SOUTH CAROLINA, UNITED STATES
+NASHVILLE, TENNESSEE, UNITED STATES
+HOUSTON, TEXAS, UNITED STATES
+SPRINGFIELD, VIRGINIA, UNITED STATES
+</p>
+  </div>
+</div>
 </body>
-    
-    
+</html
