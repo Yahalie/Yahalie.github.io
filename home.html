@@ -22,54 +22,11 @@ body, html {
    border-radius: 3px;
 color: #eee;
     }
- header{
+ header {
   background: url('z.png') center no-repeat;
  min-height: 100%;
    background-size: 800px 750px;
   background-color: #6600ff;
- }
- 
-</style>
-<body>
-
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar w3-gray w3-card-2" id="myNavbar">
-    <a href="index.html" class="w3-bar-item w3-text-light-grey w3-button w3-wide">B L K</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-text-light-grey w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-users"></i> | U s</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-university"></i> | A R A</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-book"></i> | C A T A L O G</a>
-      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-podcast"></i> | E T C.</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> | M S G.</a>
-     <a href="http://blkprivilege.bigcartel.com/" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> | S H O P</a>
-    </div>
-    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </div>
-</div>
-
-<!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-text-grey w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">U s</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">A R A</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">C A T A L O G</a>
-  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> E T C.</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">M S G.</a>
-  <a href="http://blkprivilege.bigcartel.com/" onclick="w3_close()" class="w3-bar-item w3-button"></i> S H O P</a>
-</nav>onclick="w3_close()" 
-
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container" id="home">
-  <div class="w3-display-left w3-text-dark-gray" style="padding: 8px 8px">
-   <head>
-    <style>
-body {
   margin: 0;
   padding: 0;
   border: none;
@@ -78,8 +35,9 @@ body {
   justify-content: center;
   height: 100vh;
   background: #333;
-}
-h1 {
+ }
+
+.w2-bar h1 {
   position: absolute;
   z-index: 5;
   text-align: center;
@@ -89,7 +47,7 @@ h1 {
   font-size: calc(4.8vw);
   white-space: nowrap;
 }
-h1:after {
+.w2-bar h1:after {
   content: '| P R I V I L E G E';
   font-size: calc(4.8vw);
   margin-left: 3%;
@@ -164,9 +122,44 @@ h1:after {
   -webkit-background-clip: text;
 }
 </style>
-</head>
 <body>
-<div class='hover_1 hoverbox'></div>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-gray w3-card-2" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-text-light-grey w3-button w3-wide">B L K</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-text-light-grey w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-users"></i> | U s</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-university"></i> | A R A</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-book"></i> | C A T A L O G</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-podcast"></i> | E T C.</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> | M S G.</a>
+     <a href="http://blkprivilege.bigcartel.com/" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> | S H O P</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-text-grey w3-card-2 w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">U s</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">A R A</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">C A T A L O G</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> E T C.</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">M S G.</a>
+  <a href="http://blkprivilege.bigcartel.com/" onclick="w3_close()" class="w3-bar-item w3-button"></i> S H O P</a>
+</nav>onclick="w3_close()" 
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-dark-gray" style="padding: 8px 8px">
+  <div class='hover_1 hoverbox'></div>
 <div class='hover_2 hoverbox'></div>
 <div class='hover_3 hoverbox'></div>
 <div class='hover_4 hoverbox'></div>
@@ -177,8 +170,8 @@ h1:after {
 <div class='hover_9 hoverbox'></div>
 <div class='hover_10 hoverbox'></div>
 <div class='hover_11 hoverbox'></div>
-<h1>B L K</h1>
-</body>
+<h1 class="w2-bar">B L K</h1>
+
     </div> 
 </header>
 
