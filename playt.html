@@ -1,16 +1,47 @@
 <html>
-<title>P L A Y 2</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<title> L O B B Y </title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<style>
-  *{
-background-color: #000;
-color:#666;
- font-family: "Raleway", sans-serif;
+<style>
+* { color: #000;
+	font-family: "Raleway", sans-serif;
+	box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 10;
+	color: #000;
+}
+.vid-info { position: absolute; bottom: 0; right: 0; width: 100%; background:  rgba(0,0,0,0.2); color: #000; padding: 1rem; font-family: "Raleway", sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #6600ff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
 }
 nav {
-  background-color: #000;
+  background-color: transparent;
 }
 nav li {
 float: right;
@@ -25,11 +56,11 @@ display: inline;
   float: left;	
  }
 .contact-btn a {
-color: #6600ff;
+color: #000;
 position: relative;
   margin-left: 30px;
   padding: 8px 18px;
-  border: 3px solid #6600ff;
+  border: 3px solid #666;
 }
 .contact-btn a:active {
   position: relative;
@@ -38,29 +69,33 @@ position: relative;
 nav a {
   height: 60px;
   line-height: 60px;
-  color: #6600ff;
+  color: #000;
   text-decoration: none;
 }
 </style>
 <body>
-	   <nav>
-		   <b><div class="contact-btn"><a href="retainment.html">B A C K</a></div></b>
+	
+	  <nav>
+		   <b><div class="contact-btn"><a href="home.html">H O M E</a></div></b>
 		     <ul>
-      <li><a href="load.html">F I N A L | S T A G E</a></li>
-	<li><a href="blkvis.html"><b>V I S I U A L </b></a></li>
-	<li><a href="blk.html">A R T I C L E </a></li>
+      <li><a href="home.html#team">E X P L O R E </a></li>
+	<li><a href="araexplained.html"><b>L E A R N </b></a></li>
+	<li><a href="http://blkprivilege.bigcartel.com">S H O P </a></li>
 	</ul>
  </nav>
-<div class="w3-container">
-  <center><h1>B L K | P R I V I L E G E</h1>
-  <p>B L K is G O L D!</p>
- </center></div>
-<style>
+	
+<div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/OGoLd1LvW2A?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=OGoLd1LvW2A" allowfullscreen></iframe>
+    </div>
+  </div>
 
-</style>
-
-<center><iframe width="100%" height="80%" src="https://www.youtube.com/embed/P6FywIrPFR8?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen> 
-</iframe></center>
-
+<div id="vidtop-content">
+<div class="vid-info">
+	<h1>T H A N K S FOR THE S U P P O R T . . .</h1>
+	<p> CANADA | GERMANY | ITALY | UNITED KINGDOM | UNITED STATES
+</p>
+  </div>
+</div>
 </body>
-</html>
+</html
