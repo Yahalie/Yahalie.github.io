@@ -62,7 +62,37 @@ position: relative;
 @media all and (max-width: 90%) {
   main { padding: 1px; }
 }
-	.nav {background:linear-gradient(#000, #6600FF);width: 0px;}
+	body, html {
+   font-family: 'Raleway', Times;
+    height: 100%;
+   }
+.w3-bar .w3-button {
+    padding: 16px;
+}
+	
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 30px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    }
+
+.article {
+    text-align: left;
+    background: #000;
+    color:#FFF;
+    line-height: 200%;
+}
+	header {background: linear-gradient( #6600FF, #000); color:#666;}
+	footer { background-position: center repeat; background-image: url("40.jpg");color: #eee;max-height:1%;}
+.nav {background:linear-gradient(#000, #6600FF);width: 0px;}
 
 .nav ul {
     list-style-type: none;
@@ -72,9 +102,28 @@ position: relative;
     text-decoration: none;
     color:#eee;
 }
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+	footer {-webkit-order:3;order:3;} }
+	
+     .w3-wide, .w3-bar, .w3-right{
+	    background: #fff;
+    min-height: 80%;
+color: #000;
+    }
 </style>
 <body>
- <div class="w3-right w3-hide-small">
+		<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card-2" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide w3-xxlarge"><i class="fa fa-home"></i></a>
+<div class="w3-bar-item w3-button"> A U D I O | A R T I C L E</div>
+<div class="w3-bar-item w3-button"><audio controls>
+	<source src="article2.mp3" type="audio/mpeg"></audio></div>	
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
       <a href="home.html#about" class="w3-bar-item w3-button"><i class="fa fa-users"></i> | U s</a>
       <a href="home.html#team" class="w3-bar-item w3-button"><i class="fa fa-university"></i> | A R A</a>
       <a href="home.html#work" class="w3-bar-item w3-button"><i class="fa fa-book"></i> | C A T A L O G</a>
@@ -98,7 +147,6 @@ position: relative;
   <a href="home.html#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> E T C.</a>
   <a href="home.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">M S G.</a>
 </nav>
-
 <header>
 	<h1>C A N N A B I S</h1>	
 	</header>
