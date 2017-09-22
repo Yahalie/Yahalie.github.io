@@ -1,0 +1,13 @@
+html>
+<head>
+<title> B L Kids | C A N N I A B I S</title>
+<style>
+body {
+    background-color:#333;
+    background-size: 100%;
+    background-position: center;
+    background-repeat:no-repeat;
+    background-image: url('cannabis-kids.gif');
+</style>
+</head>
+</html>
