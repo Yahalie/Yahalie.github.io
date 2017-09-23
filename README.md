@@ -1,4 +1,4 @@
-![New layout](_Layout.png) 
+![New layout](Pictures/_Layout.png) 
 
 # Purpose
 
