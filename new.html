@@ -14,7 +14,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #000;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -56,29 +56,31 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
+  <a href="#">R E A D | L I S T E N</a>
+    <a href="#">S U P P O R T</a>
+    <a href="#">W A T C H</a>
+   
+    <br>
+    <br>
+  <a href="#">C O N T A C T</a>
+  <a href="#">D O N A T E</a>
 </div>
 
 <div id="main">
-  <h2>Sidenav Push Example</h2>
-  <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-</div>
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; M E N U</span>
+ </div>
 
 <script>
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "1000px";
+    document.getElementById("main").style.marginLeft = "100px";
     document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
+    document.body.style.backgroundColor = "pink";
 }
 </script>
      
