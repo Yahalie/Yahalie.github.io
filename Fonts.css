@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'old_zar_font';
+    src: url('/theme/wordp/fonts/text/Ambroise-Francois-Demi/ambroise_francois_demi_regular-webfont.eot');
+    src: url('/theme/wordp/fonts/text/Ambroise-Francois-Demi/ambroise_francois_demi_regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/theme/wordp/fonts/text/Ambroise-Francois-Demi/ambroise_francois_demi_regular-webfont.woff2') format('woff2'),
+    url('/theme/wordp/fonts/text/Ambroise-Francois-Demi/ambroise_francois_demi_regular-webfont.woff') format('woff'),
+    url('/theme/wordp/fonts/text/Ambroise-Francois-Demi/ambroise_francois_demi_regular-webfont.ttf') format('truetype'),
+    url('/theme/wordp/fonts/text/Ambroise-Francois-Demi/ambroise_francois_demi_regular-webfont.svg#ambroise_francois_demiregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'myriad_applebold';
+    src: url('/theme/wordp/fonts/text/Myriad-apple-bold/myriadab-webfont.eot');
+    src: url('/theme/wordp/fonts/text/Myriad-apple-bold/myriadab-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/theme/wordp/fonts/text/Myriad-apple-bold/myriadab-webfont.woff2') format('woff2'),
+    url('/theme/wordp/fonts/text/Myriad-apple-bold/myriadab-webfont.woff') format('woff'),
+    url('/theme/wordp/fonts/text/Myriad-apple-bold/myriadab-webfont.ttf') format('truetype'),
+    url('/theme/wordp/fonts/text/Myriad-apple-bold/myriadab-webfont.svg#myriad_applebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'HelveticaNeue-Light';
+    src: url('/theme/wordp/fonts/text/HalveticaNeue-Light/HelveticaNeue-Light.eot');
+    src: url('/theme/wordp/fonts/text/HalveticaNeue-Light/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),
+    url('/theme/wordp/fonts/text/HalveticaNeue-Light/HelveticaNeue-Light.woff') format('woff'),
+    url('/theme/wordp/fonts/text/HalveticaNeue-Light/HelveticaNeue-Light.ttf') format('truetype'),
+    url('/theme/wordp/fonts/text/HalveticaNeue-Light/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'helveticaregular';
+    src: url('/theme/wordp/fonts/text/Halvetica/halvetica-webfont.eot');
+    src: url('/theme/wordp/fonts/text/Halvetica/halvetica-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/theme/wordp/fonts/text/Halvetica/halvetica-webfont.woff2') format('woff2'),
+    url('/theme/wordp/fonts/text/Halvetica/halvetica-webfont.woff') format('woff'),
+    url('/theme/wordp/fonts/text/Halvetica/halvetica-webfont.ttf') format('truetype'),
+    url('/theme/wordp/fonts/text/Halvetica/halvetica-webfont.svg#helveticaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'helvetica-lightregular';
+    src: url('/theme/wordp/fonts/text/Halvetica-Light/helvetica_light-webfont.eot');
+    src: url('/theme/wordp/fonts/text/Halvetica-Light/helvetica_light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('/theme/wordp/fonts/text/Halvetica-Light/helvetica_light-webfont.woff2') format('woff2'),
+    url('/theme/wordp/fonts/text/Halvetica-Light/helvetica_light-webfont.woff') format('woff'),
+    url('/theme/wordp/fonts/text/Halvetica-Light/helvetica_light-webfont.ttf') format('truetype'),
+    url('/theme/wordp/fonts/text/Halvetica-Light/helvetica_light-webfont.svg#helvetica-lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.oldFont {
+    font-family: 'old_zar_font', serif;
+}
+.myriadAppBld {
+    font-family: 'myriad_applebold', serif;
+}
+.TimesNewRoman {
+    font-family: "Times New Roman", Times, serif;
+}
+.Halvetica {
+    font-family: "helveticaregular", Times, serif;
+}
+.HalveticaLight {
+    font-family: "helvetica-lightregular", Times, serif;
+}
+.HalveticaNeueLight {
+    font-family: "HelveticaNeue-Light", Times, serif;
+}
