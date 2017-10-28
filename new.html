@@ -62,6 +62,13 @@ body {
 .topnav .icon {
     display: none;
 }
+    @media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
 </style>
 </head>
 <body>
@@ -70,18 +77,19 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   <a href="#">R E A D | L I S T E N</a>
     <a href="#">S U P P O R T</a>
     <a href="#">W A T C H</a>
     <a id="blahh" href="#">C O N T A C T</a>
   <a href="#">D O N A T E</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+
 </div>
 
 <div id="main">
+<center><span style="font-size:21px" onclick="openNav()">B L K | P R I V I L E G E</span></center>
 <span style="font-size:17px;cursor:pointer" onclick="openNav()">&#9776; M E N U</span>
- <center><span style="font-size:21px" onclick="openNav()">B L K | P R I V I L E G E</span></center>
- </div>
+</div>
 
 <script>
 function openNav() {
