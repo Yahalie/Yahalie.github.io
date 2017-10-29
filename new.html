@@ -2,116 +2,61 @@
 <html>
 <head>
 <style>
-body {
-    font-family: "Lato", sans-serif;
-    transition: background-color .5s;
-    color: #714304;
-    background-color: #000;
+*{ background-color: #000;
+color: #714304;
+}
+.container {
+  border: 1px solid #714304;
+  background-color: transparent;
+  border-radius: 0px;
+  padding: 16px;
+  margin: 16px 0
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #714304;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 11px;
-    color: #000;
-    display: block;
-    transition: 0.3s;
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 0%;
 }
 
-.sidenav a:hover {
-    color: #714304;
+.container span {
+  font-size: 30px;
+  margin-right: 15px;
 }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 30px;
-    margin-left: 50px;
-}
-
-#main {
-    transition: margin-left .5s;
-    padding: 16px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 11px;}
-}
-    a#blahh {
-    padding-top: 430px;
-}
-    
-    
-
-/* Hide the link that should open and close the topnav on small screens */
-.topnav .icon {
-    display: none;
-}
-    @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
+@media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: none;
+      display: block;
   }
 }
 </style>
 </head>
 <body>
 
-  
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-  <a href="#">R E A D | L I S T E N</a>
-    <a href="#">S U P P O R T</a>
-    <a href="#">W A T C H</a>
-    <a id="blahh" href="#">C O N T A C T</a>
-  <a href="#">D O N A T E</a>
-
+<div class="container">
+  <img src="/w3images/bandmember.jpg" alt="Avatar" style="width:90px">
+  <p><span>C A N N A B I S</span> by Mr. Selassie</p>
+  <p>John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster.</p>
 </div>
 
-<div id="main">
-<center><span style="font-size:21px" onclick="openNav()">B L K | P R I V I L E G E</span></center>
-<span style="font-size:17px;cursor:pointer" onclick="openNav()">&#9776; M E N U</span>
+<div class="container">
+  <img src="/w3images/avatar_g2.jpg" alt="Avatar" style="width:90px">
+  <p><span >C H A K R A </span> by Yahhalie S.</p>
+  <p>John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster.</p>
 </div>
 
-<script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "black";
-}
-    function myFunction() {
-    var x = document.getElementById("mySidenav");
-    if (x.className === "sidenav") {
-        x.className += " responsive";
-    } else {
-        x.className = "sidenav";
-    }
-}
-</script>
-     
 </body>
-</html> 
+</html>
+
