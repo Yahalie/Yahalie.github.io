@@ -2,34 +2,77 @@
 <html>
 <title>W3.CSS</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3mobile.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
 <body>
 
-<!-- Sidebar -->
-<div class="w3-sidebar w3-bar-block" style="display:none" id="myNavbar">
-  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
-  <a href="/Webpages/In Use/home.html#about" class="w3-bar-item w3-button"><i class="fa fa-users"></i> A B O U T</a>		
-      <a href="/Webpages/In Use/home.html#team" class="w3-bar-item w3-button"><i class="fa fa-university"></i> R E A D</a>		
-      <a href="/Webpages/In Use/home.html#work" class="w3-bar-item w3-button w3-bottom"><i class="fa fa-book"></i> W A T C H</a>		
-      <a href="http://blkprivilege.bigcartel.com/contact" class="w3-bar-item w3-button w3-bottom"><i class="fa fa-envelope"></i> B U Y</a>	<a href="http://blkprivilege.bigcartel.com/" class="w3-bar-item w3-button w3-bottom"><i class="fa fa-shopping-cart"></i> D O N A T E</a>
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="img_avatar.jpg" alt="avatar" style="width:75%">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="#">Movies</a>
+<a class="w3-bar-item w3-button" href="#">Friends</a>
+<a class="w3-bar-item w3-button" href="#">Messages</a>
+<a class="w3-bar-item w3-button w3-bottom" href="#">Movies</a>
+<a class="w3-bar-item w3-button w3-bottom" href="#">Friends</a>
+<a class="w3-bar-item w3-button w3-bottom" href="#">Messages</a>
+</nav>
+
+<header class="w3-top w3-bar w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h1 class="w3-bar-item w3-right"></h1>
+ </header>
+
+<div class="w3-container" style="margin-top:90px">
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>Frozen</h3>
+    <p>The response to the animations was ridiculous.</p>
+  </div>
+</div>  
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>The Fault in Our Stars</h3>
+    <p>Touching, gripping and genuinely well made.</p>
+  </div>
+</div>
+<hr>
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:30%">
+    <img class="w3-circle" src="img_avatar.jpg" style="width:100%">
+  </div>
+  <div class="w3-cell w3-container">
+    <h3>The Avengers</h3>
+    <p>A huge success for Marvel and Disney.</p>
+  </div>
+</div>
+<hr>
 </div>
 
-<!-- Page Content -->
-<div class="w3-teal">
-  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
-
-</div>
-
-
+<footer class="w3-container w3-bottom w3-theme w3-margin-top">
+  <h3>Footer</h3>
+</footer>
 
 <script>
-function w3_open() {
-    document.getElementById("myNavbar").style.display = "block";
+closeSidebar();
+function openSidebar() {
+    document.getElementById("mySidebar").style.display = "block";
 }
-function w3_close() {
-    document.getElementById("myNavbar").style.display = "none";
+function closeSidebar() {
+    document.getElementById("mySidebar").style.display = "none";
 }
 </script>
-     
+
 </body>
-</html> 
