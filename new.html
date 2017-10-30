@@ -1,160 +1,190 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bana's Travel Blog</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="reset.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    /* Universal Styles */
-
-html{
-  font-size: 16px;
-}
-p {
-  min-width: 200px;
-  min-height: 200px;
+  <title>Amazing Space</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+  </style>
+  html,
+body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: GhostWhite;
 }
 
 body {
-  background-color: #000;
+  background-image: url("../img/space.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.image-container {
-  overflow:hidden;
+.clearfix {
+  clear: both;
 }
 
-.image-container img {
-  max-width:100%;
-  height:auto;
-  display: block;
-}
+/* Title and Description */
 
-/* Banner Section */
-
-#banner {
-  background-size:cover;
-  background-image: url('/Pictures/Unused/z.png');
-  background-position: center;
-  height: 5.5rem;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.page-title {
   text-align: center;
-}
-
-#banner h1 {
-  font-size: 1.175rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  color: #000;
-}
-
-/* Blog Post */
-
-#blog {
-  width: 86%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  line-height: 2em;
+ }
+
+.logo {
+  height: 80px;
+  width: 80px;
+  background-image: url("../img/spaceship.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 1em;
 }
 
-#blog .post {
-  width: 62%;
-  margin-top: 1.5%;
-  margin-bottom: 0.5%;
+.page-title h1 {
+  display: inline-block;
+}
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Merriweather', serif;
-  font-weight: 300;
-  font-size: 1rem;
+.main {
   text-align: center;
-  line-height: 1.8;
-  color: #714304;
 }
 
-.post h2 {
-  font-size:1.875rem;
-  
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
 }
 
-.post h3 {
-  font-size:1.125rem;
-  color: #999999;
-}
-
-.post .opening-line {
-  margin-top: 2.1875rem;
-  margin-bottom: 0.5rem;
-  color: #714304;
+.learn-more {
+  color: DarkOrange;
+  text-decoration: none;
+  display: block;
+  margin: 25px 0 0 0;
   font-weight: bold;
 }
 
-.post .image-container {
-  width: 100%;
+/* Gallery */
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
 }
 
-/* Blog Images */
-
-.images {
-   margin-bottom: 20%;
+.gallery-item {
+  margin: 20px;
 }
 
-.images .image-container {
-  display: inline-block;
-  width: 50%;
+.gallery-item .thumbnail {
+  width: 240px;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
 }
 
-/* Footer */
+/* Footer Navigation */
 
-footer {
-  padding: 1rem 0;
-  border-top: 1px solid #999999;
-  font-family: 'Roboto', sans-serif;
-  font-size:1.125rem;
-  color: #714304;
+nav {
+  margin-top: 30px;
+}
+
+nav ul {
+  display: block;
+}
+
+nav li {
+  display: inline;
+  margin: 0 20px 0 0;
+  color: GhostWhite;
+}
+
+nav a {
+  line-height: 60px;
+  border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: DarkOrange;
+  text-decoration: none;
+}
+
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
   text-align: center;
 }
-    @media only screen and (max-width: 480px) {
-  body {
-    font-size: 50px;
-  }
+
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
 }
-  </style>
-</head>
+@media only screen and (max-width: 480px) {
+  .page-title {
+   width: 270px;
+}
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) { .gallery-item .thumbnail {
+  width: 95%;
+}
+    /* ruleset for 320px - 480px */
+}
+@media only screen and (max-resolution: 150dpi)  and (max-width: 480px) { .page-description{ font-size:20px;}}
+  <style>
+    </head>
 <body>
-  <div id="banner">
-    <h1>B L K | P R I V I L E G E . O R G</h1>
-  </div>
-  <div id="blog">
-    <div class="post">
-      <h2>C A N N A B I S</h2>
-      <h3>O C T O B E R | 2 0 1 7</h3>
-      <strong class="opening-line">On Saturday, Dilara took us to the market.</strong>
-      <p>It is a wonderfully eclectic mix of goods from all over the world - delightfully random. I dusted off my bargaining skills to buy a metal bracelet with camels on it, and Maggie bought a lapis lazuli necklace from Afghanistan. In the evening, we walked along Gulf Road towards the marina, passed through Marina Mall, and ate dinner at a wonderful little cafe that we will definitely be frequenting. Ive developed a slight obsession with lentil soul... maybe its because I miss Focos Indian lentil chili.</p>
-      <div class="image-container">
-        <img src="/Pictures/Unused/z.png" />
-      </div>
-      <p>We took a catamaran from the marina to Failaka Island, where we got to explore a bit, relax on the beach, and go swimming. The water in the Gulf is incredibly still; I havent seen a wave yet, and when you look out on the horizon it seems to go forever. Something about the color of the water and maybe the dust in the air make it seem hazier than the Atlantic coast. I have some cool pictures of the city skyline as we returned on the boat.</p>
-      <p>That night, I hung out in a cafe with two friends, drinking traditional lemonade with mint. Its delicious; maybe I should send in a flavor suggestion to Morano Gelato? Then we drove around the city for a while. Cruising around is a really valid way to spend the time when a tank of gas costs about seven bucks. </p>
+  <header>
+    <div class="page-title">
+      <div class="logo"></div>
+      <h1>Amazing Space</h1>
+      <h5>At Amazing Space, there's always space for you.&trade;</h5>
     </div>
-    <div class="images">
-      <div class="image-container">
-        <img src="/Pictures/Unused/z.png" />
-      </div><!--
-      Adding comment to ensure no whitespace between inline-block div elements from HTML file.
-      --><div class="image-container">
-        <img src="/Pictures/Unused/z.png" />
-      </div>
+  </header>
+  <div class="main">
+    <p class="page-description clearfix">
+      Otherworldly views, uncompromising service, unparallelled luxury. This is Amazing Space, the world's first, and finest, space adventure company. With private and group voyages embarking weekly, you can book your tickets in advance or on the fly.
+      <a class="learn-more" href="#">Learn More >></a>
+    </p>
+    <div class="gallery">
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space01.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space02.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space03.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space04.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space05.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space06.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space07.jpg">
+      </figure>
+      <figure class="gallery-item">
+        <img class="thumbnail" src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/space08.jpg">
+      </figure>
     </div>
   </div>
-  <footer>
-    <span>&copy; B L K | P R I V I L E G E</span>
-  </footer>
+  <nav class="footer">
+    <ul>
+      <li>ABOUT</li>
+      <li>MISSIONS</li>
+      <li>ARCHIVE</li>
+    </ul>
+    <div class="contact-btn">
+      <a>CONTACT US</a>
+    </div>
+  </nav>
 </body>
+
 </html>
