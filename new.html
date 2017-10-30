@@ -133,7 +133,37 @@ nav a {
 }
 @media only screen and (max-resolution: 150dpi)  and (max-width: 480px) { .page-description{ font-size:20px;}}
     
+.container {
+  border: 1px solid #714304;
+  background-color: transparent;
+  border-radius: 0px;
+  padding: 16px;
+  margin: 16px 0;
+   font-size: 30px;
+}
 
+
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 0%;
+}
+
+.container span {
+  font-size: 40px;
+  margin-right: 15px;
+}
+
+ @media (max-width: 500px) {
+  .container {
+      text-align: center;
+  }
+  .container img {
+      margin: auto;
+      float: left;
+      display: block;
+  }
+}
  </style>
     </head>
 <body>
@@ -151,11 +181,14 @@ nav a {
     </div>
   </header>
   <div class="main">
-    
+   
+
+
  
         <div class="gallery">
       <figure class="gallery-item">
-        <img class="thumbnail" src="/Pictures/Bubbles/Chakra12.png"> <h1>C H A K R A</h1> <p>John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster.</p>
+         
+        <img class="thumbnail" src="/Pictures/Bubbles/Chakra12.png"> <div class="container"> img src="/Pictures/Bubbles/Marriage12.png"> <p><span>C H A K R A </span></p><p>John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster. John Doe saved us from a web disaster.</p></div>
       </figure>
       <br>
       <figure class="gallery-item">
