@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">		
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">		
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">		
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		
 <style>		
 @font-face {		
@@ -37,19 +37,20 @@ color: #000;
 	}		
 			
 </style>		
-<body>		
-	
+<body>
+
 <!-- Navbar (sit on top) -->		
 <div class="w3-top">		
-  <div class="w3-bar w3-card-2" id="myNavbar">		
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-wide"><i class="fa fa-bars fa-2x"></i></a>		
+  <div class="w3-sidebar w3-bar-block" id="myNavbar">		
+     <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+</div>
     <!-- Right-sided navbar links -->		
-    <div class="w3-right w3-hide-small">		
+    <div class="w3-sidebar w3-bar-block" style="display:none" id="myNavbar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>		
       <a href="/Webpages/In Use/home.html#about" class="w3-bar-item w3-button"><i class="fa fa-users"></i> A B O U T</a>		
       <a href="/Webpages/In Use/home.html#team" class="w3-bar-item w3-button"><i class="fa fa-university"></i> R E A D</a>		
       <a href="/Webpages/In Use/home.html#work" class="w3-bar-item w3-button"><i class="fa fa-book"></i> W A T C H</a>		
       <a href="http://blkprivilege.bigcartel.com/contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> B U Y</a>	<a href="http://blkprivilege.bigcartel.com/" class="w3-bar-item w3-button"><i class="fa fa-shopping-cart"></i> D O N A T E</a>	
-    	
     </div>		
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->		
 		
@@ -120,10 +121,6 @@ color: #000;
     </div>		
   </div>		
 </div>		
-		
-		
-		
-		
  		
     <!-- Footer -->		
 <footer class="w3-center w3-black w3-padding-4">		
@@ -149,7 +146,15 @@ function w3_open() {
 function w3_close() {		
     mySidebar.style.display = "none";		
 }		
-</script>		
+</script>
+<script>
+function w3_open() {
+    document.getElementById("myNavbar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("myNavbar").style.display = "none";
+}
+</script>
 		
 </body>		
 </html>
