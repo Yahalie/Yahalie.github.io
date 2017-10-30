@@ -41,7 +41,7 @@ color: #000;
 	
 <!-- Navbar (sit on top) -->		
 <div class="w3-top">		
-  <div class="w3-bar w3-card-2" id="myNavbar">		
+  <div class="w3-sidebar w3-bar-block w3-black w3-text-grey w3-card-2 w3-animate-left w3-show-medium w3-hide-small" style="display:none" id="mySidebar>		
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-wide"><i class="fa fa-bars fa-2x"></i></a>		
     <!-- Right-sided navbar links -->		
     <div class="w3-right w3-hide-small">		
@@ -68,7 +68,7 @@ color: #000;
  <a href="http://blkprivilege.bigcartel.com/contact" onclick="w3_close()" class="w3-bar-item w3-button">M S G.</a>		
   <a href="http://blkprivilege.bigcartel.com/" onclick="w3_close()" class="w3-bar-item w3-button">S H O P</a>		
 </nav>		
--   		
+	
 <!-- Team Section -->		
 <div class="w3-container w3-black" style="padding:80px 16px">		
   <h3 class="w3-center" id="home">B L K | P R I V I L E G E</h3>		
@@ -133,14 +133,7 @@ color: #000;
  </footer>		
   		
 <script>		
-// Modal Image Gallery		
-function onClick(element) {		
-  document.getElementById("img01").src = element.src;		
-  document.getElementById("modal01").style.display = "block";		
-  var captionText = document.getElementById("caption");		
-  captionText.innerHTML = element.alt;		
-}		
-		
+
 // Toggle between showing and hiding the sidebar when clicking the menu icon		
 var mySidebar = document.getElementById("mySidebar");		
 		
