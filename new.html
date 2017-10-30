@@ -53,23 +53,10 @@ body {
   text-align: center;
 }
 
-.page-description {
-  font-size: 0.8rem;
-  padding: 30px;
-}
-
-.learn-more {
-  color: #714304;
-  text-decoration: none;
-  display: block;
-  margin: 25px 0 0 0;
-  font-weight: bold;
-}
-
 /* Gallery */
 
 .gallery {
-  display: flex;
+  display: block;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
@@ -139,15 +126,11 @@ nav a {
     <div class="page-title">
       <div class="logo"></div>
       <h1>B L K | P R I V I L E G E</h1>
-      <h5>I AM B | L | K.&trade;</h5>
+      <h5>I AM B | L | K. &trade;</h5>
     </div>
   </header>
   <div class="main">
-    <p class="page-description clearfix">
-      Otherworldly views, uncompromising service, unparallelled luxury. This is Amazing Space, the world's first, and finest, space adventure company. With private and group voyages embarking weekly, you can book your tickets in advance or on the fly.
-      <a class="learn-more" href="#">Learn More >></a>
-    </p>
-    <div class="gallery">
+        <div class="gallery">
       <figure class="gallery-item">
         <img class="thumbnail" src="/Pictures/Unused/z.png">
       </figure>
@@ -164,12 +147,12 @@ nav a {
   </div>
   <nav class="footer">
     <ul>
-      <li>ABOUT</li>
-      <li>MISSIONS</li>
-      <li>ARCHIVE</li>
+      <a href="#"><li>ABOUT</li></a>
+       <a href="#"><li>MISSIONS</li></a>
+       <a href="#"><li>ARCHIVE</li></a>
     </ul>
     <div class="contact-btn">
-      <a>CONTACT US</a>
+      <a href="#">CONTACT US</a>
     </div>
   </nav>
 </body>
