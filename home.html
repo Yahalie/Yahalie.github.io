@@ -45,7 +45,7 @@ color: #000;
 	 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left" onclick="w3_open()">
       <i class="fa fa-bars fa-2x"></i>
     </a>
-     
+	  
   </div>
 </div>
 
@@ -177,8 +177,9 @@ function w3_open() {
     }
 }
 // Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
+window.onclick = function(event) {
+    if (event.target == mySidebar) {
+        mySidebar.style.display = "none";
 }
 </script>
 
