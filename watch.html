@@ -49,6 +49,42 @@ color: #714304;
     color: #bb7f30!important;
     background-color: #000!important;
 }
+	* { box-sizing: border-box; }
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0; right: 0; bottom: 0; left: 0;
+  z-index: -99;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#vidtop-content {
+	top: 0;
+	color: #fff;
+}
+.vid-info { position: absolute; top: 0; right: 0; width: 33%; background: rgba(0,0,0,0.3); color: #fff; padding: 1rem; font-family: Avenir, Helvetica, sans-serif; }
+.vid-info h1 { font-size: 2rem; font-weight: 700; margin-top: 0; line-height: 1.2; }
+.vid-info a { display: block; color: #fff; text-decoration: none; background: rgba(0,0,0,0.5); transition: .6s background; border-bottom: none; margin: 1rem auto; text-align: center; }
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground { width: 300%; left: -100%; }
+}
+@media all and (max-width: 600px) {
+.vid-info { width: 50%; padding: .5rem; }
+.vid-info h1 { margin-bottom: .2rem; }
+}
+@media all and (max-width: 500px) {
+.vid-info .acronym { display: none; }
+}
 </style>
 <body>
 
@@ -77,14 +113,28 @@ color: #714304;
 
 <!-- Header with full-height image -->
 
-<!-- <header class="bgimg-1 w3-display-container" id="home">
+<header class="bgimg-1 w3-display-container" id="home">
   <div class="w3-center w3-text-gray" style="padding: 103px 37px 40px 37px">
 	  
 	<h1 style="color:#bbb; font-family: 'Sucrose Bold Two'; text-align:center">A L E R T: <br> K N O W L E D G E | D R O P</h1> <h1 style="color:rgba(205, 72, 42, 0.75);font-family: 'Sucrose Bold Two'"> Article on  Marriage License has dropped!</h1>	
   <h2 style="color:#bbb;text-align:center"><a href="/Webpages/Articles/marriagelicense.html" class="w3-button"><i class="fa fa-book"> </i> R E A D </a></h2>
 	  <p style="text-align:right; font-family: 'Times'"> Updated on 10 | 13 | 2017</p>
 	</div>
-</header> -->
+	<div class="video-background">
+    <div class="video-foreground">
+      <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+<div id="vidtop-content">
+<div class="vid-info">
+	  <h1>YouTube Fullscreen Background Demo</h1>
+	  <p>The International Space Station orbits the Earth every 92 minutes, with its crew seeing a sunrise 15 times a day. It exists as a scientific, educational, and engineering platform in low orbit, 330 to 435 kilometres above the Earth.
+     <p>Original timelapse by Riccardo Rossi (ISAA), used under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Raw photos courtesy of http://eol.jsc.nasa.gov/
+	 <a href="/500/Use-YouTube-Videos-as-Fullscreen-Web-Page-Backgrounds">Full article</a>
+  </div>
+</div>
+</header> 
 	
 <!-- Skills Section -->
 	<div class="w3-container w3-black" style="padding:78px 16px">
