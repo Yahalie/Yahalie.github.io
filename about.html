@@ -77,6 +77,15 @@ background-color: #000;
   -webkit-shape-outside:circle();
   shape-outside:circle();
 }
+#circle-shape-example .curvess { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: center;
+  margin-right:2rem; 
+  border-radius: 100%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
 </style>
 <body>
 
@@ -106,7 +115,8 @@ background-color: #000;
 	<div class="w3-container w3-black" style="padding:78px 16px">
  <div class="w3-row-padding w3-center" style="margin-top:64px">
  <div class="w3-center">
-	 <img src="/Pictures/Unused/z.png" class="curve">
+<div id="circle-shape-example">
+	<img src="/Pictures/Unused/z.png" class="curvess"> </div>
      	<div id="circle-shape-example">
   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/kiwifruit-on-a-plate.jpg" alt="A photograph of sliced kiwifruit on a while plate" class="curve"><h1>KiwiFruit</h1>
 
