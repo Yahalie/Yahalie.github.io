@@ -1,0 +1,142 @@
+<html>
+<title>B L K | D O N A T E</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<style>
+@font-face {
+		font-family: 'Sucrose Bold Two';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+	}
+ body,h1,h2,h3,h4,h5,h6,p {font-family: "Raleway", sans-serif;
+	color: #714304;}
+body, html {
+    height: 80%;
+    line-height: 1.8;
+	background-color: #000;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+  .w3-bar a, .w3-wide a, .w3-bar, .w3-right a {
+    background-position: center repeat;
+       background-color: #000;
+    min-height: 90%;
+   border-radius: 3px;
+color: #714304;
+    }
+	.w3-button {
+	border: 1px solid #bb7f30;
+	}
+	footer .w3-button {
+	color: #bb7f30;
+	text-decoration: none;
+	}
+	.w3-sidebar {
+	 background-color: #714304;
+	color: #000;
+	}
+	.fa-hand-rock-o, fa-paypal  {
+	color:  #bb7f30;
+		}
+.w3-green, .w3-hover-green:hover {
+    color: #d02626!important;
+    background-color: #714304!important;
+}
+.w3-black, .w3-hover-black:hover {
+    color: #bb7f30!important;
+    background-color: #000!important;
+}
+	@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+#circle-shape-example { 
+  font-family: Open Sans, sans-serif; 
+  margin: 2rem; 
+background-color: #000;
+}
+#circle-shape-example p { 
+  line-height: 1.8; 
+}
+#circle-shape-example .curve { 
+  width: 33%; height: auto;
+  min-width: 150px;
+  float: right;
+  margin-left:2rem; 
+  border-radius: 100%;
+  -webkit-shape-outside:circle();
+  shape-outside:circle();
+}
+#circle-shape-example .curvess { 
+  width: 33%; height: auto;
+  min-width: 150px;
+align: center;
+margin-right:2rem; 
+  border-radius: 0%;
+  -webkit-shape-outside:square();
+  shape-outside:square();
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card-2" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide w3-right"><i class="fa fa-home fa-2x"></i></a>
+<!-- Right-sided navbar links -->
+ 	 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left" onclick="w3_open()">
+      <i class="fa fa-bars fa-2x"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-xx-large w3-padding-16 w3-right">X</a>
+	  <a href="/Webpages/In Use/home.html#about" onclick="w3_close()" class="w3-bar-item w3-button"> <i class="fa fa-shopping-cart"></i> | B U Y</a>
+  <a href="/Webpages/In Use/home.html#about" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-book"></i> | R E A D</a>
+  <a href="/Webpages/In Use/home.html#team" onclick="w3_close()" class="w3-bar-item w3-button"> <i class="fa fa-tv"></i> | W A T C H</a>
+  <a href="/Webpages/In Use/home.html#work" onclick="w3_close()" class="w3-bar-item w3-button"> <i class="fa fa-users"></i> | A B O U T</a>
+ <a href="http://blkprivilege.bigcartel.com/contact" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> | C O N T A C T</a>
+  <a href="http://blkprivilege.bigcartel.com/" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-university"></i> | D O N A T E</a>
+</nav>
+
+<!-- Skills Section -->
+	<div class="w3-container w3-black" style="padding:48px 16px">
+ <div class="w3-row-padding w3-center" style="margin-top:24px">
+ <div class="w3-center">
+<div id="circle-shape-example">
+	<a href="#" class="w3-button w3-center"><img src="/Pictures/Unused/z.png" class="curvess"><i class="fa fa-arrow-up"></i></a>
+  <img src="/Pictures/Unused/z.png" class="curvess"> <br>
+     	<h2>B L K | P R I V I L E G E </h2>
+      </div>
+    </div>
+    </div>
+	
+	
+   <!-- Footer -->
+<footer  class="w3-center w3-black">
+	  <a href="#up" class="w3-button w3-center"><i class="fa fa-arrow-up"></i></a>
+ <p> © B L K | P R I V I L E G E <br> C O P Y R I G H T 1 9 9 3 - 2 0 1 7 </p>
+ <script type="text/javascript" src="//rf.revolvermaps.com/0/0/9.js?i=5pm5922n91y&amp;t= ..." async="async"></script> 
+ </footer>
+  
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
