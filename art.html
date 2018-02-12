@@ -1,0 +1,235 @@
+<html>
+<title>BL K | A R T</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<style>
+@font-face {
+		font-family: 'Sucrose Bold Two';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/sucrose.woff2') format('woff2');
+	}
+ body,h1,h2,h3,h4,h5,h6,p {font-family: "Raleway", sans-serif;
+	color: #714304;}
+body, html {
+    height: 80%;
+    line-height: 1.8;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+  .w3-bar a, .w3-wide a, .w3-bar, .w3-right a {
+    background-position: center repeat;
+       background-color: #000;
+    min-height: 90%;
+   border-radius: 3px;
+color: #714304;
+    }
+	.w3-button {
+	border: 1px solid #bb7f30;
+	}
+	footer .w3-button {
+	color: #bb7f30;
+	text-decoration: none;
+	}
+	.w3-sidebar {
+	 background-color: #714304;
+	color: #000;
+	}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card-2" id="myNavbar">
+    <a href="/index.html" class="w3-bar-item w3-button w3-wide w3-right"><i class="fa fa-home fa-2x"></i></a>
+<!-- Right-sided navbar links -->
+    <div class="w3-right">
+          <a href="#" class="w3-bar-item w3-button"> N E X T | <i class="fa fa-arrow-right"></i></a>
+	    </div>
+	 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-left" onclick="w3_open()">
+      <i class="fa fa-bars fa-2x"></i>
+    </a>
+	<!--<p class="w3-bar-item"><i class="fa fa-bars"></i> to <i class="fa fa-pause"></i></p> -->	
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-card-2 w3-animate-left" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-xx-large w3-padding-16 w3-right">X</a>
+	 <div class="w3-bar-item w3-button" style="width: 24%;"><audio controls autoplay>
+	<source src="/Audio/Bob.mp3" type="audio/mpeg"></audio></div>
+  <a href="/Webpages/buy1.html" onclick="w3_close()" class="w3-bar-item w3-button"> <i class="fa fa-shopping-cart"></i> | B U Y</a>
+  <a href="/Webpages/readgallery.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-book"></i> | R E A D</a>
+  <a href="/Webpages/watch.html" onclick="w3_close()" class="w3-bar-item w3-button"> <i class="fa fa-tv"></i> | W A T C H</a>
+  <a href="/Webpages/about.html" onclick="w3_close()" class="w3-bar-item w3-button"> <i class="fa fa-users"></i> | A B O U T</a>
+ <a href="/Webpages/contact.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> | C O N T A C T</a>
+  <a href="/Webpages/donate.html" onclick="w3_close()" class="w3-bar-item w3-button"><i class="fa fa-university"></i> | D O N A T E</a>
+</nav>
+<!-- Team Section -->
+<div id="up" class="w3-container w3-black" style="padding:80px 16px">
+  <h1 class="w3-center"> B L K | A R T </h1>
+	<div class="w3-row-padding" style="margin-top:34px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/blkm.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">B L K | P R I V I </h3>
+          <p class="w3-opacity w3-center"> The privilege comes from within.</p>
+          <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/contact" target="_blank" class="w3-button"><i class="fa fa-shopping-cart"></i> | $30 </a></p>
+          </div>
+      </div>
+    </div>
+	  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/art(3).png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">R A S T A</h3>
+          <p class="w3-opacity w3-center">"Look to the East".</p>
+         <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/product/g-a-r-v-e-y" target="_blank" class="w3-button"> <i class="fa fa-shopping-cart"></i> O P E N</a></p>
+          </div>
+      </div>
+    </div>
+	  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/blks.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">C O L L E C T I O N </h3>
+          <p class="w3-opacity w3-center">B L K | P R I V I L E G E is Melanin.</p>
+         <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/product/s-h-a-k-u-r" target="_blank" class="w3-button"><i class="fa fa-shopping-cart"></i> | $30</a></p>
+		 </div>
+      </div>
+    </div>
+	  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/blksreg.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">B L K | P R I V I L E G E</h3>
+          <p class="w3-opacity w3-center"> Support the movement to awareness. </p>
+         <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/product/s-e-l-a-s-s-i-e" target="_blank" class="w3-button"><i class="fa fa-shopping-cart"></i> | $30 </a></p>
+          </div>
+      </div>
+    </div>
+	
+	
+  <div class="w3-row-padding" style="margin-top:34px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img id="team" src="/Pictures/Catalog/Breastmilk.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">B R E A S T M I L K</h3>
+          <p class="w3-opacity w3-center">This design is about the 'pricelessness' of Breastfeeding versus the normalized formula feeding.</p>
+          <p  class="w3-center"><a href="http://blkprivilege.bigcartel.com/product/s-e-l-a-s-s-i-e"  target="_blank" class="w3-button"><i class="fa fa-shopping-cart"></i> | $70</a></p>
+         </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/Catalog/Ankh logo.png" style="width:100%">
+        <div class="w3-container w3-center">
+          <h3 class="w3-center">L O G O | A N K H</h3>
+           <p class="w3-opacity w3-center"> This design offers a more discreet look while wearing the Ankh. <i class="fa fa-shopping-cart"></i> | $30</p>
+             <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/contact"  target="_blank" class="w3-button">P R E - O R D E R</a></p>
+         </div>
+      </div>
+    </div>         
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/Catalog/Ankh.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">A N K H</h3>
+          <p class="w3-opacity w3-center"> This design embeddes the Ancient KMT alphabet within the well-known symbol of eternal life, the Ankh.</p>
+       <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/product/b-l-k-p-r-i-v-i"  target="_blank" class="w3-button  w3-center"><i class="fa fa-shopping-cart"></i> | $70 </a></p>
+          </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/Catalog/B L K.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center"> L O G O | B L K </h3>
+          <p class="w3-opacity w3-center"> This design illustrates our brand: Resilient & Discreet. <i class="fa fa-shopping-cart"></i> | $30</p>
+   <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/contact" target="_blank" class="w3-button"> P R E - O R D E R</a></p>
+          </div>
+      </div>
+    </div>
+</div>
+
+<div class="w3-row-padding" style="margin-top:34px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/Catalog/Stilluh.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">S T I L L U H</h3>
+          <p class="w3-opacity w3-center"> This design embarks on an infamous truth of the B L K society.</p>
+          <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/product/g-a-r-v-e-y" target="_blank" class="w3-button"><i class="fa fa-shopping-cart"></i> | $70 </a></p>
+          </div>
+      </div>
+    </div>
+	  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/Catalog/Eye of Ra.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center"> L O G O | W A D J E T</h3>
+          <p class="w3-opacity w3-center"> This design embeddes the Ancient KMT symbol of the Wadjet. <i class="fa fa-shopping-cart"></i> | $30</p>
+         <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/contact" target="_blank" class="w3-button"> P R E - O R D E R</a></p>
+          </div>
+      </div>
+    </div>
+	  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/Catalog/Flat Earth.png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">F L A T | E A R T H</h3>
+          <p class="w3-opacity w3-center"> This design was created with the freethinker in mind.</p>
+         <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/product/s-h-a-k-u-r" target="_blank" class="w3-button"><i class="fa fa-shopping-cart"></i> | $30</a></p>
+		 </div>
+      </div>
+    </div>
+	  <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card-2">
+        <img src="/Pictures/Catalog/July 17 (3).png" style="width:100%">
+        <div class="w3-container">
+          <h3 class="w3-center">M A L C O L M | X</h3>
+          <p class="w3-opacity w3-center">  This design pays homage to the notorious Malcolm X.</p>
+         <p class="w3-center"><a href="http://blkprivilege.bigcartel.com/product/e-n-j-o-y" target="_blank" class="w3-button"><i class="fa fa-shopping-cart"></i> | $70 </a></p>
+          </div>
+      </div>
+    </div>
+  </div>
+ </div>
+	
+    <!-- Footer -->
+<footer class="w3-center w3-black">
+	<div style="padding: 16px;">
+      <a href="#" class="w3-left w3-button"> <i class="fa fa-arrow-left"></i> | P R E V</a>
+      <a href="/Webpages/In Use/load.html" class="w3-right w3-button">N E X T | <i class="fa fa-arrow-right"></i></a>
+	    </div>
+  <a href="#up" class="w3-button w3-center"><i class="fa fa-arrow-up"></i></a>
+ <p> © B L K | P R I V I L E G E <br> C O P Y R I G H T 1 9 9 3 - 2 0 1 7 </p>
+ <script type="text/javascript" src="//rf.revolvermaps.com/0/0/9.js?i=5pm5922n91y&amp;t= ..." async="async"></script> 
+ </footer>
+	
+	
+	
+ 
+<script>
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+function w3_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+    } else {
+        mySidebar.style.display = 'block';
+    }
+}
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
